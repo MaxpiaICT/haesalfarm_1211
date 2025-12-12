@@ -7,13 +7,14 @@ import Detail from './pages/Detail'
 import './index.css'
 
 const root = createRoot(document.getElementById('root'))
+
 root.render(
-	<BrowserRouter basename="/haesalfarm_1211">
-		<Routes>
-			<Route path="/" element={<App />}>
-				<Route index element={<Home />} />
-				<Route path="detail/:id" element={<Detail />} />
-			</Route>
-		</Routes>
-	</BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Home />} />
+        <Route path="detail/:id" element={<Detail />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 )
